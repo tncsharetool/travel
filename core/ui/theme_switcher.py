@@ -1,31 +1,14 @@
-# core/ui/theme_switcher.py
 import streamlit as st
 
 def theme_switcher():
-    theme = st.sidebar.radio("🎨 Giao diện", ["🌞 Light", "🌙 Dark"])
-    
-    if theme == "🌙 Dark":
-        dark_css = """
+    dark_mode = st.sidebar.checkbox("🌙 Dark Mode", value=False)
+    if dark_mode:
+        st.markdown(
+            """
             <style>
-            body, .stApp {
-                background-color: #1e1e1e;
-                color: #ffffff;
-            }
-            .stButton>button, .stTextInput>div>input, .stSelectbox>div>div, .stTextArea>div>textarea {
-                background-color: #333 !important;
-                color: #fff !important;
-                border-color: #555 !important;
-            }
+                body { background-color: #121212; color: white; }
+                .stTextInput > div > div > input { background-color: #1e1e1e; color: white; }
             </style>
-        """
-        st.markdown(dark_css, unsafe_allow_html=True)
-    else:
-        light_css = """
-            <style>
-            body, .stApp {
-                background-color: #ffffff;
-                color: #000000;
-            }
-            </style>
-        """
-        st.markdown(light_css, unsafe_allow_html=True)
+            """,
+            unsafe_allow_html=True
+        )
