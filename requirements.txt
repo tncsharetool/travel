@@ -5,6 +5,10 @@ python-dotenv
 supabase
 requests
 Pillow
+pyrebase4
+streamlit-authenticator
+PyYAML
+
 
 
 
