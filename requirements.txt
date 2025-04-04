@@ -4,3 +4,9 @@ openai
 python-dotenv
 supabase
 requests
+Pillow
+
+
+
+
+
