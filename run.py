@@ -1,8 +1,6 @@
 # run.py
-
 import streamlit as st
-from core.layout import render_main_layout
+from core.layout import main  # sửa lại tên hàm đúng với layout.py
 
 if __name__ == "__main__":
-    render_main_layout()
-# Entry point for the app
+    main()
