@@ -1,0 +1,10 @@
+{
+  "title": "🇻🇳 VN Vietnam AI Travel Planner",
+  "description": "Lên kế hoạch chuyến đi hoàn hảo của bạn với AI ✨ Chỉ cần nhập mong muốn!",
+  "input_placeholder": "✍️ Mô tả chuyến đi lý tưởng của bạn:",
+  "generate_button": "⚡ Tạo lịch trình",
+  "select_language": "🌐 Chọn ngôn ngữ giao diện:",
+  "popular_destinations": "📍 Địa điểm nổi bật sẽ hiện ở đây.",
+  "error_no_input": "⚠️ Vui lòng nhập nội dung mong muốn trước khi tạo lịch trình.",
+  "loading": "🔄 Đang tạo lịch trình, vui lòng chờ..."
+}
