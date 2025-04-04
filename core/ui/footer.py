@@ -1,12 +1,12 @@
-# core/ui/footer.py
-
 import streamlit as st
 
 def show_footer():
     st.markdown("---")
     st.markdown(
-        "<div style='text-align: center; font-size: 13px;'>"
-        "📍 Vietnam AI Travel Planner · Built with ❤️ by Team Chuyền Leader"
-        "</div>",
+        "<p style='text-align:center; font-size:12px;'>"
+        "✨ Powered by <strong>AffTravel AI</strong> | "
+        "<a href='https://getyourguide.club' target='_blank'>Visit Our Site</a> | "
+        "<a href='mailto:contact@getyourguide.club'>Contact</a>"
+        "</p>",
         unsafe_allow_html=True
     )
