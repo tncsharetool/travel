@@ -1,14 +1,12 @@
-# core/ui/trending_prompts.py
 import streamlit as st
+import json
 
-def trending_prompts():
-    st.markdown("🔥 **Prompt Gợi Ý (Hot Trends)**")
-    prompt_list = [
-        "Tôi muốn du lịch 3 ngày ở Đà Lạt",
-        "Tour nghỉ dưỡng cho gia đình 4 người",
-        "Hành trình khám phá miền Trung trong 1 tuần",
-        "Tôi muốn check-in các điểm nổi ở Hội An"
-        "Hành trình khám phá Hà Giang trong 4 ngày",
-    ]
-    selected = st.selectbox("📌 Chọn mẫu:", prompt_list)
-    return selected
+def show_trending_prompts():
+    try:
+        with open("prompt_library/trending_topics.json", "r", encoding="utf-8") as f:
+            topics = json.load(f)
+        st.markdown("🔥 **Xu hướng đang hot:**")
+        for topic in topics[:5]:
+            st.markdown(f"- {topic}")
+    except:
+        st.warning("Không có dữ liệu trending.")
