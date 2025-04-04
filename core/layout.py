@@ -4,7 +4,7 @@ from PIL import Image
 from core.langs import get_texts
 from user.content_exporter import generate_itinerary
 from prompt_library.prompt_loader import load_prompt, load_destinations
-from user.destination_generator import generate_destination_block
+from prompt_library.destination_generator import generate_destination_block
 
 def main():
     # 1. Logo + banner
